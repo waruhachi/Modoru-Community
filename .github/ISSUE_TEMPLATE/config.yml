@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: App compatibility tracker
+    url: https://github.com/waruhachi?tab=projects
+    about: Check here first to see if an app is already working, in progress, or can't be supported.
