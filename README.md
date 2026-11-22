@@ -1,6 +1,6 @@
 # Modoru
 
-Modoru runs App Store apps on iOS versions below their minimum — the ones that refuse to install because they require a newer iOS. It's in early development for jailbroken iOS 16, with iOS 17 next and iOS 14 through 26 as the goal.
+Modoru runs App Store apps on iOS versions below their minimum, the ones that refuse to install because they need a newer iOS. The goal is iOS 14 through 26; right now it targets jailbroken iOS 16, with iOS 17 next.
 
 ## Request an app
 
@@ -12,4 +12,4 @@ The [project board](https://github.com/waruhachi?tab=projects) tracks which apps
 
 ## Status
 
-Early development and looking for beta testers on jailbroken iOS 16. The source code will be published here when it's ready.
+Early development. Beta testers on jailbroken iOS 16 are welcome, and the source code will be published here when it's ready.
