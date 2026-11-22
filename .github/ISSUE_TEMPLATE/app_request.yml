@@ -1,0 +1,53 @@
+name: App request
+description: Request an app for Modoru to support
+title: "[App request]: "
+labels: ["app request"]
+body:
+  - type: input
+    id: app_name
+    attributes:
+      label: App name
+      description: The name of the app as it appears on the App Store.
+      placeholder: e.g. Perplexity
+    validations:
+      required: true
+  - type: input
+    id: appstore_link
+    attributes:
+      label: App Store link
+      placeholder: https://apps.apple.com/app/id123456789
+    validations:
+      required: true
+  - type: input
+    id: minimum_ios
+    attributes:
+      label: Minimum iOS version it requires
+      description: The version the App Store lists under Requires, if you know it.
+      placeholder: e.g. iOS 18
+    validations:
+      required: false
+  - type: dropdown
+    id: current_behavior
+    attributes:
+      label: What happens when you try it now?
+      options:
+        - Haven't tried it
+        - App Store won't let me install it
+        - Installs but crashes on launch
+        - Opens but something specific is broken
+    validations:
+      required: true
+  - type: input
+    id: device_info
+    attributes:
+      label: Your device, iOS version and jailbreak
+      placeholder: e.g. iPhone 13, iOS 16.3.1, RootHide
+    validations:
+      required: false
+  - type: textarea
+    id: details
+    attributes:
+      label: Anything else
+      description: What breaks, error messages, or anything else worth knowing.
+    validations:
+      required: false
