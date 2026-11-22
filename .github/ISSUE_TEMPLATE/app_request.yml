@@ -26,22 +26,25 @@ body:
       placeholder: e.g. iOS 18
     validations:
       required: false
-  - type: dropdown
-    id: current_behavior
-    attributes:
-      label: What happens when you try it now?
-      options:
-        - Haven't tried it
-        - App Store won't let me install it
-        - Installs but crashes on launch
-        - Opens but something specific is broken
-    validations:
-      required: true
   - type: input
-    id: device_info
+    id: device
     attributes:
-      label: Your device, iOS version and jailbreak
-      placeholder: e.g. iPhone 13, iOS 16.3.1, RootHide
+      label: Device
+      placeholder: e.g. iPhone 13
+    validations:
+      required: false
+  - type: input
+    id: ios_version
+    attributes:
+      label: iOS version
+      placeholder: e.g. 16.3.1
+    validations:
+      required: false
+  - type: input
+    id: jailbreak
+    attributes:
+      label: Jailbreak
+      placeholder: e.g. RootHide, Dopamine
     validations:
       required: false
   - type: textarea
